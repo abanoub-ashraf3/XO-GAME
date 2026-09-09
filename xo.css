@@ -3,7 +3,7 @@
 }
 
 .game{
-    width: 375px;
+    width: 345px;
     text-align: center;
     font-family: system-ui;
     margin: auto;
@@ -17,7 +17,7 @@
     margin: 100px 0;
     border-radius: 5px;
     color: white;
-    font-size:xx-large;
+    font-size: xx-large;
 }
 
 span{
@@ -26,8 +26,8 @@ span{
 }
 
 .square{
-    width: 120px;
-    height: 120px;
+    width: 110px;
+    height: 110px;
     margin: 2px;
     border-radius: 5px;
     background-color: black;

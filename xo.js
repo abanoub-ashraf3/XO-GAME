@@ -7,20 +7,20 @@ function end(num1, num2, num3)
     titlee.innerHTML = `${squares[num1]} WINNER`
 
      document.getElementById('item'+num1).innerHTML =
-        '<img src="bh.jpg" class="winner-img">';
+        '<img src="messi.jpg" class="winner-img">';
 
     document.getElementById('item'+num2).innerHTML =
-        '<img src="bh.jpg" class="winner-img">';
+        '<img src="messi.jpg" class="winner-img">';
 
     document.getElementById('item'+num3).innerHTML =
-        '<img src="bh.jpg" class="winner-img">';
+        '<img src="messi.jpg" class="winner-img">';
 
     document.getElementById('item'+num1).style.background = 'rgb(83, 182, 37)';
     document.getElementById('item'+num2).style.background = 'rgb(83, 182, 37)';
     document.getElementById('item'+num3).style.background = 'rgb(83, 182, 37)';
 
     setInterval(function(){titlee.innerHTML += '.'}, 1000);
-    setTimeout(function(){location.reload()}, 4000)
+    setTimeout(function(){location.reload()}, 3000);
 }
 
 function winner()
@@ -69,6 +69,26 @@ function winner()
     {
         end(3,5,7);
     }
+
+    else if (
+    squares[1] != '' &&
+    squares[2] != '' &&
+    squares[3] != '' &&
+    squares[4] != '' &&
+    squares[5] != '' &&
+    squares[6] != '' &&
+    squares[7] != '' &&
+    squares[8] != '' &&
+    squares[9] != ''
+            ) 
+{
+    titlee.innerHTML = 'DRAW';
+
+    setTimeout(function(){
+        location.reload();
+    }, 3000);
+}
+
 }
 
 function game(id)
